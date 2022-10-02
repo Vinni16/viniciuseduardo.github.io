@@ -47,34 +47,43 @@ h1 {
     color: #ccc;
     border-radius: 10px;
 }
-.section {
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-h2 {
+h2, h3 {
+    font-size: 30px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.projeto {
-    flex: 1 1 300px;
-    margin: 8px;
+
+///
+
+.section {
+    justify-content: space-between;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.projeto img {
-    width: 400px;
-    max-width: 100%;
-    border-radius: 10px;
-}
 .projeto {
-    color: #ccc;
-    background-color: #7C02D1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
     text-align: center;
     margin: 5px;
     border-radius: 15px;
 }
+.projeto img {
+    width: 300px;
+    border-radius: 10px;
+}
+.projeto p {
+    padding: 5px;
+    max-height: 40px;
+    color: #ccc;
+    background-color: #7C02D1;
+    border-radius: 10px;
+}
+
+///
+
 .sobre {
     padding-top: 20px;
     text-align: center;
