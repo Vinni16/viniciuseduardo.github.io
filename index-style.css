@@ -21,7 +21,7 @@ body {
     display: flex;
     background-color: #7C02D1;
     box-shadow: 0px 5px 20px #000;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 ul {
@@ -46,28 +46,41 @@ ul {
 h1 {
     color: #ccc;
     border-radius: 10px;
+    font-size: clamp(1em, 1em + 1vw, 2em);
 }
 h2, h3 {
+    color: #ccc;
     font-size: 30px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: clamp(1em, 1em + 1vw, 2em);
 }
+/* Tag clamp(valor minimo, valor desejável, valor maximo) */
 
-///
+
+///* Meus Projetos *///
 
 .section {
-    justify-content: space-between;
-    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.section div {
+    height: 330px;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: ;
     flex-wrap: wrap;
 }
 .projeto {
+    
     display: flex;
     flex-wrap: wrap;
+    max-height: 200px;
     max-width: 300px;
-    text-align: center;
-    margin: 5px;
+    margin: 10px;
     border-radius: 15px;
 }
 .projeto img {
@@ -75,6 +88,7 @@ h2, h3 {
     border-radius: 10px;
 }
 .projeto p {
+    text-align: center;
     padding: 5px;
     max-height: 40px;
     color: #ccc;
@@ -82,13 +96,14 @@ h2, h3 {
     border-radius: 10px;
 }
 
-///
+///* FIM Meus Projetos *///
 
 .sobre {
     padding-top: 20px;
     text-align: center;
 }
 .sobre p {
+    color: #ccc;
     text-align: center;
     padding-right: 19%;
     padding-left: 19%;
