@@ -42,6 +42,8 @@ ul {
     text-decoration: none;
     margin-left: 10px;
     background-color: #C257FF;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 h1 {
     color: #ccc;
@@ -52,11 +54,26 @@ h2, h3 {
     color: #ccc;
     font-size: 30px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5%;
     margin-bottom: 20px;
     font-size: clamp(1em, 1em + 1vw, 2em);
 }
 /* Tag clamp(valor minimo, valor desejável, valor maximo) */
+
+
+.QuemSou {
+    display: flex;
+    max-height: 120px;
+    padding-right: 30%;
+    padding-left: 30%;
+}
+.QuemSou p {
+    color: #ccc;
+}
+.QuemSou img {
+    width: 100px;
+    border-radius: 70px;
+}
 
 
 ///* Meus Projetos *///
@@ -83,8 +100,16 @@ h2, h3 {
     margin: 10px;
     border-radius: 15px;
 }
+.projeto img:hover {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    background-color: #C257FF;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 .projeto img {
-    width: 300px;
+    max-width: 300px;
     border-radius: 10px;
 }
 .projeto p {
@@ -95,18 +120,24 @@ h2, h3 {
     background-color: #7C02D1;
     border-radius: 10px;
 }
+.projeto p:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
 ///* FIM Meus Projetos *///
 
 .sobre {
-    padding-top: 20px;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
 }
-.sobre p {
+.redes {
+    max-width: 40%;
+}
+.redes a {
     color: #ccc;
-    text-align: center;
-    padding-right: 19%;
-    padding-left: 19%;
-    max-height: ;
-    max-width: ;
+    text-decoration: none;
+}
+.redes img {
+    width: 20px;
 }
