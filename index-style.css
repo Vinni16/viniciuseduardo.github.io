@@ -58,14 +58,22 @@ h2, h3 {
     margin-bottom: 20px;
     font-size: clamp(1em, 1em + 1vw, 2em);
 }
+.obs {
+    color: #ccc;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Tag clamp(valor minimo, valor desejável, valor maximo) */
 
 
 .QuemSou {
+    color: #ccc;
     display: flex;
-    max-height: 120px;
     padding-right: 30%;
     padding-left: 30%;
+    max-height: 120px;
 }
 .QuemSou p {
     color: #ccc;
@@ -128,16 +136,20 @@ h2, h3 {
 ///* FIM Meus Projetos *///
 
 .sobre {
-    width: 100%;
-    justify-content: center;
+    
 }
 .redes {
-    max-width: 40%;
+    text-align: center;
+}
+.redes:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 .redes a {
     color: #ccc;
     text-decoration: none;
 }
 .redes img {
-    width: 20px;
+    margin-left: 10px;
+    width: 25px;
 }
